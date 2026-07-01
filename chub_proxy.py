@@ -451,7 +451,7 @@ if __name__ == '__main__':
     print_startup_message()
     
     try:
-        app.run(host='127.0.0.1', port=PROXY_PORT, debug=True)
+        app.run(host='0.0.0.0', port=PROXY_PORT, debug=True)
     except KeyboardInterrupt:
         print("\n\nProxy stopped. Goodbye!")
     except Exception as e:
