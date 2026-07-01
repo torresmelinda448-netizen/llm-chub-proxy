@@ -1,0 +1,12 @@
+# Chub.ai Smart Proxy Configuration
+default_profile: zai-free
+
+profiles:
+  # Z.ai Free GLM-4.7-Flash Model
+  zai-free:
+    name: Z.ai Free (GLM-4.7-Flash)
+    base_url: https://api.z.ai/api/paas/v4
+    api_key: ${ZAI_API_KEY}
+    force_model: glm-4.7-flash
+    headers:
+      Content-Type: application/json
